@@ -1,0 +1,142 @@
+:root {
+  --bg: #0f1418;
+  --card: #171d23;
+  --text: #e8ecef;
+  --muted: #9aa7b0;
+  --accent: #35c26b;
+  --border: #262e35;
+  --maxw: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+}
+
+nav.top a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 0.95rem;
+}
+
+nav.top a:hover, nav.top a.active {
+  color: var(--text);
+}
+
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.lang-toggle button.active {
+  background: var(--accent);
+  color: #06180d;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px clamp(18px, 5vw, 36px);
+}
+
+h1 { font-size: 1.7rem; margin-top: 0; }
+h2 { font-size: 1.15rem; margin-top: 2em; border-top: 1px solid var(--border); padding-top: 1.2em; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); font-size: 0.9rem; }
+a { color: var(--accent); }
+
+.lang-block { display: none; }
+.lang-block.active { display: block; }
+
+.hero {
+  text-align: center;
+  padding: 40px 0 8px;
+}
+
+.hero .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.links a:hover { border-color: var(--accent); }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 48px;
+}
