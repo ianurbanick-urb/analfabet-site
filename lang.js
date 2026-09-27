@@ -11,6 +11,11 @@
   }
 
   function initial() {
+    // ?lang=cs|en - appka posílá jazyk, ve kterém ji uživatel používá (LegalLinks.kt)
+    try {
+      var param = new URLSearchParams(window.location.search).get("lang");
+      if (param === "cs" || param === "en") return param;
+    } catch (e) {}
     try {
       var saved = localStorage.getItem("analfabet-lang");
       if (saved === "cs" || saved === "en") return saved;
