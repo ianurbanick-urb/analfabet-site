@@ -77,6 +77,11 @@
       se zaregistruje s vaším kódem a potvrdí svůj e-mail, získáte dny navíc na svém plánu podle
       pravidel uvedených v appce. Pokud pozvánku nechcete, stačí ji ignorovat; s dotazy se
       můžete obrátit na kontaktní e-mail výše.</p>
+      <p>E-mailovou adresu pozvaného zpracujeme jen kvůli odeslání jedné pozvánky a neukládáme
+      ji &ndash; zůstává z ní pouze nevratný otisk SHA-256, podle kterého hlídáme limit pozvánek.
+      Pokud si pozvaný nainstaluje appku z odkazu v pozvánce, může appka při prvním spuštění
+      jednorázově přečíst kód pozvánky z Google Play (Install Referrer API) a předvyplnit ho
+      v registraci; nic dalšího z odkazu nepoužívá a kód sám žádné osobní údaje neobsahuje.</p>
 
       <h2>5. Kdo má k údajům přístup</h2>
       <ul>
@@ -173,6 +178,12 @@
       further. For a friend who signs up with your code and confirms their e-mail, you receive
       extra days on your plan under the rules shown in the app. If you do not want an invitation,
       simply ignore it; for questions, contact us at the e-mail above.</p>
+      <p>We process the invited person’s e-mail address solely to send one invitation and we do
+      not store it &ndash; all that remains is an irreversible SHA-256 hash, which we use to enforce
+      the invitation limits. If the invited person installs the app from the link in the invitation,
+      the app may read the invite code once from Google Play on first launch (Install Referrer API)
+      and prefill it during sign-up; it uses nothing else from the link, and the code itself
+      contains no personal data.</p>
 
       <h2>5. Who has access to the data</h2>
       <ul>
