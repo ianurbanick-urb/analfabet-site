@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pozvánka do Analfabetu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html"><span class="dot"></span> Analfabet</a>
+    <div class="lang-toggle">
+      <button data-lang="cs">CS</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <span class="dot"></span>
+
+    <div class="lang-block" data-lang="cs">
+      <h1>Kamarád tě zve do Analfabetu</h1>
+      <p class="muted">Analfabet je fotbalová statistika s modelem: pásma pro góly, střely na
+      branku, rohy, karty a fauly u zápasů 17 soutěží.</p>
+
+      <section class="invite-code-card" data-code-card hidden>
+        <h2>Tvůj kód pozvánky</h2>
+        <div class="invite-code-row">
+          <span class="invite-code" data-code></span>
+          <button type="button" class="btn-copy" data-copy
+                  data-label-done="Zkopírováno" data-label-fail="Zkopíruj ho ručně">Kopírovat</button>
+        </div>
+        <p class="muted">Zadej ho při registraci do pole Kód pozvánky.</p>
+      </section>
+
+      <div class="links">
+        <a data-play rel="noopener">Stáhnout na Google Play</a>
+        <a data-web rel="noopener">Otevřít webovou verzi</a>
+      </div>
+      <p class="muted invite-note">Webová verze je pro iPhone a počítač.</p>
+    </div>
+
+    <div class="lang-block" data-lang="en">
+      <h1>A friend invited you to Analfabet</h1>
+      <p class="muted">Analfabet is football statistics with a model: ranges for goals, shots on
+      target, corners, cards and fouls across 17 competitions.</p>
+
+      <section class="invite-code-card" data-code-card hidden>
+        <h2>Your invite code</h2>
+        <div class="invite-code-row">
+          <span class="invite-code" data-code></span>
+          <button type="button" class="btn-copy" data-copy
+                  data-label-done="Copied" data-label-fail="Copy it manually">Copy</button>
+        </div>
+        <p class="muted">Enter it in the Invite code field when you sign up.</p>
+      </section>
+
+      <div class="links">
+        <a data-play rel="noopener">Get it on Google Play</a>
+        <a data-web rel="noopener">Open the web version</a>
+      </div>
+      <p class="muted invite-note">The web version is for iPhone and desktop.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="lang-block" data-lang="cs">&copy; 2026 Analfabet &middot; <a href="privacy.html">Zásady ochrany osobních údajů</a> &middot; <a href="index.html">zpět na úvod</a></div>
+    <div class="lang-block" data-lang="en">&copy; 2026 Analfabet &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="index.html">back home</a></div>
+  </footer>
+</div>
+<script src="lang.js"></script>
+<script src="pozvanka.js"></script>
+</body>
+</html>
